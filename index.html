@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+      integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+      crossorigin="anonymous"
+    ></script>
+    <!-- link of Jquery is important to run Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--  Jquery link for button fade -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Comic+Relief:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+  
+    <!-- cdn from swiper website for scroll -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style1.css" />
+    <title>Hostxpeed</title>
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top px-3">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="Logo" />
+        </a>
+
+        
+       
+
+        <!-- Mobile Toggle -->
+         <button
+          class="navbar-toggler"
+          type="button"
+          id="navbarToggleBtn"
+          aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+ 
+
+        <!-- Navbar Items -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="mainNavbar"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"  >About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#domain">Domain Registration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hosting">VPS Hosting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#data">Data Migration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#in">Get In Touch</a>
+            </li>
+          </ul>
+          <!-- Get Started Button -->
+
+          <a
+            href="#"
+            class="btn btn-get-started ms-lg-3 mt-2 mt-lg-0"
+            id="get-started-btn"
+            >Get Started</a
+          >
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Start of Login Form Container -->
+    <div class="login-form-container" id="login-form">
+      <i class="fas fa-times" id="form-close"></i>
+
+      <form action="#">
+        <h3>Login</h3>
+        <input
+          type="email"
+          class="box"
+          placeholder="Enter your email"
+          required
+        />
+        <input
+          type="password"
+          class="box"
+          placeholder="Enter your password"
+          required
+        />
+        <input type="submit" value="Login Now" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember me</label>
+        <p>Forgot password? <a href="#">Click here</a></p>
+        <p>Don't have an account? <a href="#">Register now</a></p>
+      </form>
+    </div>
+    <!--  -->
+    <div class="container mb-5">
+      <div class="hero px-4 mt-5">
+        <div class="row">
+          <div class="col-md-8 mt-5 wow fadeInLeft">
+            <small>Experience</small>
+            <h1>Most Powerful Vps Hosting</h1>
+            <p>
+              Unlock the potential of your business with HostXpeed's most
+              powerful VPS hosting solutions.
+            </p>
+            <a href="#">
+              <button class="btn btn-sm btn-light myBtn" name="button">
+                Explore More
+                <i class="fa-solid fa-angles-right"></i>
+              </button>
+            </a>
+          </div>
+          <div class="col-md-4 wow fadeInRight">
+            <img
+              src="images/server.png"
+              style="width: 75%"
+              class="d-block mx-auto"
+              alt=""
+            />
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="margin"></div>
+    <!--  -->
+    <div class="container">
+      <div class="content-1">
+        <h1>Why Choose Hostxpeed</h1>
+        <p>
+          Experience unparalleled reliability, scalable resources, enhanced
+          control, and optimized performance tailored to meet all your hosting
+          needs.
+        </p>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card p-4 mb-3">
+              <div class="whyIcon mb-3">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <h3 style="font-size: 28px !important">Reliable Network</h3>
+              <p>
+                HostXpeed's VPS offers a reliable network with guaranteed uptime
+                and secure, high-speed connectivity, ensuring your business
+                stays online without interruption.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card p-4 mb-3">
+              <div class="whyIcon mb-3">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+              <h3 style="font-size: 28px !important">Scalable Resources</h3>
+              <p>
+                HostXpeed's VPS offers a reliable network with guaranteed uptime
+                and secure, high-speed connectivity, ensuring your business
+                stays online without interruption.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card p-4 mb-3">
+              <div class="whyIcon mb-3">
+                <i class="fa-solid fa-chalkboard"></i>
+              </div>
+              <h3 style="font-size: 28px !important">Enhanced Control</h3>
+              <p>
+                HostXpeed's VPS offers a reliable network with guaranteed uptime
+                and secure, high-speed connectivity, ensuring your business
+                stays online without interruption.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card p-4 mb-3">
+              <div class="whyIcon mb-3">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <h3 style="font-size: 28px !important">Up & Optimized</h3>
+              <p>
+                HostXpeed's VPS offers a reliable network with guaranteed uptime
+                and secure, high-speed connectivity, ensuring your business
+                stays online without interruption.
+              </p>
+            </div>
+          </div>
+          <div class="classfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="margin"></div>
+    <!--  -->
+    <div class="container">
+      <div class="content">
+        <h1>A Hosting Company That World Likes</h1>
+        <p>
+          A hosting company trusted and loved by businesses worldwide,
+          delivering unmatched reliability and performance.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-3 text-left">
+          <div class="card p-3">
+            <h2>4.9 Stars</h2>
+            <p>500 + Customer Reviews</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-left">
+          <div class="card p-3">
+            <h2>A+ Rating</h2>
+            <p>Better VPS Bureau</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 text-left">
+          <div class="card p-3">
+            <h2>1K+ VPS</h2>
+            <p>Delivered 1000+ VPS</p>
+          </div>
+        </div>
+        <div class="col-md-3 text-left">
+          <div class="card p-3">
+            <h2>10 Years</h2>
+            <p>Of Qualified Experience</p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="margin"></div>
+    <!--  -->
+    <div class="container">
+      <div class="content">
+        <h1>Among Our Clients</h1>
+        <p>
+          HostXpeed is known for delivering exceptional hosting solutions with
+          reliability, scalability, and performance that drive success and
+          satisfaction.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="slider">
+            <div class="slider-track2">
+              <div class="slide_card">
+                <img src="images/b1.png" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b2.png" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b3.png" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b4.jpeg" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b5.png" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b6.png" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b7.png" alt="" />
+              </div>
+
+              <!-- duplicate the slide -->
+
+              <div class="slide_card">
+                <img src="images/b1.png" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b2.png" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b3.png" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b4.jpeg" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b5.png" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b6.png" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b7.png" alt="" />
+              </div>
+              <!-- again duplicate -->
+              <div class="slide_card">
+                <img src="images/b1.png" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b2.png" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b3.png" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b4.jpeg" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b5.png" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b6.png" alt="" />
+              </div>
+              <div class="slide_card">
+                <img src="images/b7.png" alt="" />
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="margin"></div>
+      </div>
+    </div>
+    <div class="margin"></div>
+    <!--  -->
+  
+    <div class="container">
+      <div class="content2">
+        <h1>We Have Perfect Web Hosting Packages For You</h1>
+        <p>
+          We offer the perfect web hosting packages tailored to meet your needs,
+          providing seamless performance and unmatched reliability.
+        </p>
+           <div class="d-flex justify-content-center align-items-center mt-2">
+        <div class="toggle-container d-flex align-items-center">
+          <label for="" class="ms-2 fs-5">Monthly</label>
+          <div class="form-check form-switch">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              role="switch"
+              id="toggle-switch"
+            />
+          </div>
+          <label for="" class="ms-2 fs-5">yearly</label>
+        </div>
+        </div>
+        </div>
+
+  
+        <div class="row mt-4">
+          <div class="col-lg-4 col-md-6 col-sm-12 marg-botm-sm">
+            <div class=" title-main-div bg-white shadow">
+              <h3 class="title-plan h5">HSX-VLE-VALUE</h3>
+              <span class="from_only">Starting From</span>
+              <h4
+                class="sourcePro mt-1 h2 price"
+                data-monthly-price="15"
+                data-yearly
+                price="150"
+              >
+                $15
+                <span>Month</span>
+              </h4>
+              <p class="description mt-4">
+                Packed with great features, such as oneclick software
+                installs,24/7 support
+              </p>
+              <ul class="check-icon">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Managed VPS Starter Hosting Served
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  CPU: 1v Core
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  RAM: 2GB
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Storage 40GB SSD SATA
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Bandwidth: 250 Mbps unmetered
+                </li>
+              </ul>
+              <a href="#" class="border-0 btn btn-md btn-primary mt-1">Purchase Plan</a>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-sm-3 marg-botm-sm">
+            <div class="title-main-div bg-white shadow">
+              <div class="popular-tag">Best For Startup</div>
+              <h3 class="title-plan h5">HSX-VLE-2</h3>
+              <span class="from_only">From Only</span>
+                 <h4
+                class="sourcePro mt-1 h2 price"
+                data-monthly-price="18"
+                data-yearly
+                price="180"
+              >
+                $18
+                <span>Month</span>
+              </h4>
+              <p class="description mt-4">
+                Packed with great features, such as oneclick software
+                installs,24/7 support
+              </p>
+              <ul class="check-icon">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Managed VPS Starter Hosting Served
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  CPU: 1v Core
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  RAM: 2GB
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Storage 40GB SSD SATA
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Bandwidth: 250 Mbps unmetered
+                </li>
+              </ul>
+              <a href="#" class="border-0 btn btn-md btn-primary mt-1">Purchase Plan</a>
+          </div>
+        </div>
+
+         <div class="col-lg-4 col-md-6 col-sm-12 mb-sm-3 marg-botm-sm">
+            <div class="title-main-div bg-white shadow">
+
+              <h3 class="title-plan h5">HSX-VLE-Essential</h3>
+              <span class="from_only">Starting From</span>
+                 <h4
+                class="sourcePro mt-1 h2 price"
+                data-monthly-price="25"
+                data-yearly
+                price="250"
+              >
+                $25
+                <span>Month</span>
+              </h4>
+              <p class="description mt-4">
+                Packed with great features, such as oneclick software
+                installs,24/7 support
+              </p>
+              <ul class="check-icon">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Managed VPS Starter Hosting Served
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  CPU: 1v Core
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  RAM: 2GB
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Storage 40GB SSD SATA
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Bandwidth: 250 Mbps unmetered
+                </li>
+              </ul>
+              <a href="#" class="border-0 btn btn-md btn-primary mt-1">Purchase Plan</a>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        </div>
+      </div>
+    </div>
+    <div class="margin"></div>
+    <!--  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <a href="#" style="text-decoration: none;">
+            <button class="btn btn-md btn-primary d-block mx-auto border-0">View All Plans</button>
+          </a>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="margin"></div>
+    <!--  -->
+    <div class="container">
+      <div class="plr-15 pb-5">
+        <div class="bg-white wrapper-main position-relative shadow">
+          <div class="heading-text-center">
+            <h2>Hosting That Won't Let You Down</h2>
+      </div>
+      <div class="para">
+        <div class="col-md-5 col-sm-12 text-center d-block mx-auto">
+          <p>
+              Hostxpeed ensures reliable service with outstanding features,
+              optimal performance, and unwavering support
+              . Count on us for:
+          </p>
+       </div>
+      </div>
+
+      <div class="points">
+        <div class="container">
+          <div class="row justify-content-center flex-wrap">
+            <div class="col-lg-4 point">
+              <div class="icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45" fill="none">
+                    <circle cx="22.5039" cy="22.5" r="22.5" fill="url(#paint0_linear_1839_259)"></circle>
+                    <path d="M20.3906 19.9087V30.4624" stroke="white" stroke-width="1.70771" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M16.0039 26.6113L20.3927 31.0001" stroke="white" stroke-width="1.70771" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M24.7794 26.6113L20.3906 31.0001" stroke="white" stroke-width="1.70771" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M25.2305 24.0913V13.5376" stroke="white" stroke-width="1.70771" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M29.6193 17.3888L25.2305 13" stroke="white" stroke-width="1.70771" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M20.8359 17.3888L25.2248 13" stroke="white" stroke-width="1.70771" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <defs>
+                      <linearGradient id="paint0_linear_1839_259" x1="0.00390594" y1="3.29269" x2="47.6792" y2="7.84446" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#0082F8"></stop>
+                        <stop offset="1" stop-color="#1C40F2"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+              </div>
+              <div class="text">
+                <span>Seamless one-click upgrade/downgrade</span>
+              </div>
+            </div>
+            <div class="col-lg-3 point">
+              <div class="icons">
+              <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45" fill="none">
+                    <circle cx="22.5039" cy="22.5" r="22.5" fill="url(#paint0_linear_2502_46)"></circle>
+                    <path d="M25.2891 19.4323V15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M19.5156 19.4323V15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M30.3074 17.2207H15V30.28H30.3074V17.2207Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M15 22.7041H30.3166" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <defs>
+                      <linearGradient id="paint0_linear_2502_46" x1="0.00390594" y1="3.29269" x2="47.6792" y2="7.84446" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#0082F8"></stop>
+                        <stop offset="1" stop-color="#1C40F2"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+              </div>
+              <div class="text">
+                <span>Guaranteed 99.99% uptime</span>
+              </div>
+            </div>
+            <div class="col-lg-4 point">
+              <div class="icons">
+               <svg xmlns="http://www.w3.org/2000/svg" width="46" height="45" viewBox="0 0 46 45" fill="none">
+                    <circle cx="22.5039" cy="22.5" r="22.5" fill="url(#paint0_linear_2502_51)"></circle>
+                    <path d="M22.0891 30.9701C26.5544 30.9701 30.1742 27.3503 30.1742 22.885C30.1742 18.4197 26.5544 14.7998 22.0891 14.7998C17.6238 14.7998 14.0039 18.4197 14.0039 22.885C14.0039 27.3503 17.6238 30.9701 22.0891 30.9701Z" stroke="white" stroke-width="2" stroke-miterlimit="10"></path>
+                    <path d="M29.6636 22.8849H22.5859L24.0312 18.3262" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M19.4883 12H24.6912" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <defs>
+                      <linearGradient id="paint0_linear_2502_51" x1="0.00390594" y1="3.29269" x2="47.6792" y2="7.84446" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#0082F8"></stop>
+                        <stop offset="1" stop-color="#1C40F2"></stop>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+              </div>
+              <div class="text">
+                <span>Round-the-clock active support</span>
+              </div>
+             </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="circul-img">
+        <img src="images/left.png" alt="" class="circle-left">
+        <img src="images/right.png" alt="" class="circle-right">
+      </div>
+    </div>
+    <div class="clearfix"></div>
+   </div>
+    </div>
+    <div class="margin"></div>
+    <!--  -->
+    <div class="container">
+      <div class="migration-section">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 migrate-content">
+            <h2>Migrating From Another Web Hosting</h2>
+            <p>Switching to HostXpeed has never been easier! Our seamless migration service ensures a smooth transition from your current web hosting provider, with zero downtime and no hassle. Let us handle the technical details while you focus on growing your website.</p>
+            <a href="#" class="btn-contact">
+              <button>Request A Quote</button>
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 migrate-content-1">
+            <div class="migrate-img">
+              <img src="images/cta.png" class="img-fluid" width height alt alt="">
+            </div>
+           </div>
+       <div class="wave-img">
+        <img src="images/line-wave.svg" alt="">
+      </div>
+     </div>
+     <div class="clearfix"></div>
+   </div>
+    </div>
+    <div class="margin"></div>
+    <!--  -->
+    <div class="container">
+      <div class="hosting_plan bg-light-grey">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h2 class="vps-hosting-wlk">Every VPS Hosting Plan Include</h2>
+            <div class="cloud-host-img">
+              <img src="images/cloud.png" alt="" width="100%" >
+            </div>
+         </div>
+         <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="row">
+            <div class="col-lg-12 col-sm-12 mt-4">
+              <div class="bg-white main-div">
+                <div class="icon">
+                  <img src="images/icon1.png" alt="">
+                </div>
+                <div class="texts">
+                  <h2>Performance and Scalability</h2>
+                  <p style="font-family: 'Montserrat',sans-serif!important;">
+                    We ensure fast and reliable server response times, coupled with impressive scalability to
+                    accommodate varying resource needs seamlessly.
+                </p>
+                </div>
+              </div>
+            </div>
+
+         
+         
+            <div class="col-lg-12 col-sm-12 mt-4">
+              <div class="bg-white main-div">
+                <div class="icon">
+                  <img src="images/icon2.png" alt="">
+                </div>
+                <div class="texts">
+                  <h2>Security</h2>
+                  <p style="font-family: 'Montserrat',sans-serif!important;">
+                  We prioritizes robust security measures, implementing advanced protocols and encryption to
+                    safeguard your data, ensuring a secure and protected hosting environment.
+              </p>
+                </div>
+              </div>
+            </div>
+
+                <div class="col-lg-12 col-sm-12 mt-4">
+              <div class="bg-white main-div">
+                <div class="icon">
+                  <img src="images/icon3.png" alt="">
+                </div>
+                <div class="texts">
+                  <h2>Easy Admin/Unlimited Accounts</h2>
+                  <p style="font-family: 'Montserrat',sans-serif!important;">
+                   We allow you to effortlessly handle unlimited accounts, providing a seamless and scalable hosting
+                    experience.
+                </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="img-plus">
+              <img src="https://hostxpeed.com/wp-content/uploads/2022/07/about_btn_arrow.svg" alt="">
+              <a href="#" class="btn-feature">More Features</a>
+            </div>
+          </div>
+         </div>
+         <div class="clearfix"></div>
+      </div>
+      </div>
+  </div>
+  <div class="margin"></div>
+  <!--  -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow fadeInUp">
+        <h1>What Our clients Say</h1>
+        <p>Our testimonials highlight the experiences and satisfaction of business owners who trust HostXpeed's powerful VPS hosting solutions.</p>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="img-wrapper">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="_card wow fadeInUp">
+              <div class="img">
+                <img src="images/cl1.jpg" alt="" draggable="false">
+              </div>
+              <h2>David Miller</h2>
+              <span>CTO, WebTech Solutions</span>
+              <p>The scalability and control HostXpeed offers have made it easy for us to expand our services without worrying about server issues.</p>
+
+            </li>
+             <li class="_card wow fadeInUp">
+              <div class="img">
+                <img src="images/cl2.jpg" alt="" draggable="false">
+              </div>
+              <h2>Emily Davis</h2>
+              <span>Owner, Creative Minds</span>
+              <p>The scalability and control HostXpeed offers have made it easy for us to expand our services without worrying about server issues.</p>
+              
+            </li>
+
+            <li class="_card wow fadeInUp">
+              <div class="img">
+                <img src="images/cl3.jpg" alt="" draggable="false">
+              </div>
+              <h2>Michael Brown</h2>
+              <span>Founder, AppStreams</span>
+              <p>The scalability and control HostXpeed offers have made it easy for us to expand our services without worrying about server issues.</p>
+              
+            </li>
+
+            <li class="_card wow fadeInUp">
+              <div class="img">
+                <img src="images/cl4.jpg" alt="" draggable="false">
+              </div>
+              <h2>Olivia Taylor</h2>
+              <span>CEO, MarketHive</span>
+              <p>The scalability and control HostXpeed offers have made it easy for us to expand our services without worrying about server issues.</p>
+              
+            </li>
+
+            <li class="_card wow fadeInUp">
+              <div class="img">
+              <img src="images/cl5.jpg" alt="" draggable="false">
+              </div>
+              <h2>John Smith</h2>
+              <span>Founder, Tech Innovators</span>
+              <p>The scalability and control HostXpeed offers have made it easy for us to expand our services without worrying about server issues.</p>
+              
+            </li>
+
+             <li class="_card wow fadeInUp">
+              <div class="img">
+              <img src="images/cl6.jpg" alt="" draggable="false">
+              </div>
+              <h2>Sarah Johnson</h2>
+              <span>CEO, Digital Masters</span>
+              <p>The scalability and control HostXpeed offers have made it easy for us to expand our services without worrying about server issues.</p>
+              
+            </li>
+
+            <li class="_card wow fadeInUp">
+              <div class="img">
+                <img src="images/cl1.jpg" alt="" draggable="false">
+              </div>
+              <h2>David Miller</h2>
+              <span>CTO, WebTech Solutions</span>
+              <p>The scalability and control HostXpeed offers have made it easy for us to expand our services without worrying about server issues.</p>
+
+            </li>
+
+             <li class="_card wow fadeInUp">
+              <div class="img">
+                <img src="images/cl2.jpg" alt="" draggable="false">
+              </div>
+              <h2>Emily Davis</h2>
+              <span>Owner, Creative Minds</span>
+              <p>The scalability and control HostXpeed offers have made it easy for us to expand our services without worrying about server issues.</p>
+              
+            </li>
+
+               <li class="_card wow fadeInUp">
+              <div class="img">
+                <img src="images/cl3.jpg" alt="" draggable="false">
+              </div>
+              <h2>Michael Brown</h2>
+              <span>Founder, AppStreams</span>
+              <p>The scalability and control HostXpeed offers have made it easy for us to expand our services without worrying about server issues.</p>
+              
+            </li>
+
+              <li class="_card wow fadeInUp">
+              <div class="img">
+                <img src="images/cl4.jpg" alt="" draggable="false">
+              </div>
+              <h2>Olivia Taylor</h2>
+              <span>CEO, MarketHive</span>
+              <p>The scalability and control HostXpeed offers have made it easy for us to expand our services without worrying about server issues.</p>
+              
+            </li>
+
+             <li class="_card wow fadeInUp">
+              <div class="img">
+              <img src="images/cl5.jpg" alt="" draggable="false">
+              </div>
+              <h2>John Smith</h2>
+              <span>Founder, Tech Innovators</span>
+              <p>The scalability and control HostXpeed offers have made it easy for us to expand our services without worrying about server issues.</p>
+              
+            </li>
+
+            <li class="_card wow fadeInUp">
+              <div class="img">
+              <img src="images/cl6.jpg" alt="" draggable="false">
+              </div>
+              <h2>Sarah Johnson</h2>
+              <span>CEO, Digital Masters</span>
+              <p>The scalability and control HostXpeed offers have made it easy for us to expand our services without worrying about server issues.</p>
+              
+            </li>
+               <li class="_card wow fadeInUp">
+              <div class="img">
+                <img src="images/cl1.jpg" alt="" draggable="false">
+              </div>
+              <h2>David Miller</h2>
+              <span>CTO, WebTech Solutions</span>
+              <p>The scalability and control HostXpeed offers have made it easy for us to expand our services without worrying about server issues.</p>
+
+            </li>
+             <li class="_card wow fadeInUp">
+              <div class="img">
+                <img src="images/cl2.jpg" alt="" draggable="false">
+              </div>
+              <h2>Emily Davis</h2>
+              <span>Owner, Creative Minds</span>
+              <p>The scalability and control HostXpeed offers have made it easy for us to expand our services without worrying about server issues.</p>
+              
+            </li>
+          </ul>
+          <i class="fa-solid fa-angle-right" id="right"></i>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+    </div>
+  </div>
+  <div class="margin"></div>
+  <!--  -->
+   <!-- footer -->
+     <div class="container">
+      <footer>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="images/admin_logo.png" alt="" width="180px" class="mb-2">
+            <p>HostXpeed.com offers fast, reliable web hosting with 24/7 support, ensuring security and scalability for businesses of all sizes.
+          </p>
+          </div>
+          <div class="col-md-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Get In Touch</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Our Services</h3>
+            <ul>
+              <li><a href="#">VPS Hosting</a></li>
+              <li><a href="#">Data Migration</a></li>
+              <li><a href="#"></a>Domain Registration</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Reach US</h3>
+            <ul class="mb-1">
+              <li><a href="#">
+                <i class="fa fa-phone"></i> +44 7365 685576 
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-envelope"></i>
+                 support@hostxpeed.com 
+              </a>
+            </li>
+            </ul>
+
+            <h6 style="display: inline-block;">Follow US:</h6>
+            <div class="whyIcon">
+              <a href="#" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+            <div class="whyIcon">
+              <a href="#" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <hr >
+          <div class="d-flex justify-content-between align-items-center text-md-left">
+            <div class="col-md-6">
+              <p>
+                All Rights Reserved © 2024 Hostxpeed | Developed By: 
+                <a href="#" style="font-weight: bold;">Softielo</a>
+      
+              </p>
+           </div>
+           <div class="col-md-5 col-sm-12" style="flex-direction: row!important;">
+            <p class="mx-2"><a href="#">Terms Of Services</a></p>
+             <p class="mx-2"><a href="#">Privacy Policy</a></p>
+              <p class="mx-2"><a href="#">Cookies Policy</a></p>
+             </div>
+             <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0"></div>
+          </div>
+        </div>
+      </footer>
+     </div>
+
+    <!-- cdn from swiper website for scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
